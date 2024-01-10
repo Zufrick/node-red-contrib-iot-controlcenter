@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-iot-controlcenter",
-  "version": "1.0.5",
+  "version": "2.0.2",
   "description": "Data exchange from node-red to control center",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,15 @@
     "iot",
     "controlcenter"
   ],
+  "node-red": {
+    "version": ">=2.0.0",
+    "nodes": {
+      "Send": "IOT_connectNode.js",
+      "Get": "IOT_getNode.js",
+      "Function": "IOT_function.js",
+      "Request": "IOT_dataBase_add.js"
+    }
+  },
   "author": "Mikhail Filchenkov",
   "license": "ISC",
   "bugs": {
