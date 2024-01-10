@@ -24,7 +24,7 @@ module.exports = function(RED) {
         var node = this;
         nodeRed = this;
         node.name = config.name;
-        node.ip = config.ip;
+        // node.ip = config.ip;
    
         this.on('input', function(msg) {
             var jsonMSG = JSON.stringify(msg.payload);
