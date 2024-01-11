@@ -3,24 +3,24 @@
 **Applied Robotics license**
 
 ## Example
-+ Robot control
-![](./pictures/Robotcontrol.png "Title")
++ Robot control\
+![](./pictures/Robotcontrol.png "Title")\
 get value from platform
-![](./pictures/GetvalueforRobot.png "Title")
+![](./pictures/GetvalueforRobot.png "Title")\
 ---
-+ TrafficLight control
++ TrafficLight control\
 ![](./pictures/TrafficLightcontrol.png "Title")
 ---
-+ WorkshiftTerminal control
++ WorkshiftTerminal control\
 ![](./pictures/WorkshiftTerminalcontrol.png "Title")
 ---
-+ Conveyor control
++ Conveyor control\
 ![](./pictures/Conveyorcontrol.png "Title")
 ---
-+ LightBarrier control
++ LightBarrier control\
 ![](./pictures/LightBarriercontrol.png "Title")
 ---
-+ MySql
++ MySql\
 ![](./pictures/MySql.png "Title")
 ---
 
