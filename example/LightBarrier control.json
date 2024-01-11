@@ -1,0 +1,120 @@
+[
+    {
+        "id": "67321a5f3aeff129",
+        "type": "tab",
+        "label": "LightBarrier control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c90109d5db6d57a4",
+        "type": "function",
+        "z": "67321a5f3aeff129",
+        "name": "Get from LightBarrier1",
+        "func": "if (msg.payload.name == \"LightBarrier1\")\n{\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "e626788f9922ebd3"
+            ]
+        ]
+    },
+    {
+        "id": "e626788f9922ebd3",
+        "type": "function",
+        "z": "67321a5f3aeff129",
+        "name": "outputs ",
+        "func": "var msg1 = { payload: msg.payload.d1 };\nvar msg2 = { payload: msg.payload.d2 };\nvar msg3 = { payload: msg.payload.d3 };\n\nreturn [msg1, msg2, msg3]",
+        "outputs": 3,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "16dc490dfe807295"
+            ],
+            [
+                "b485cb76ff99d80c"
+            ],
+            [
+                "c32bada1990088e9"
+            ]
+        ]
+    },
+    {
+        "id": "2725c1d18414f35f",
+        "type": "Get",
+        "z": "67321a5f3aeff129",
+        "name": "",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "c90109d5db6d57a4"
+            ]
+        ]
+    },
+    {
+        "id": "16dc490dfe807295",
+        "type": "debug",
+        "z": "67321a5f3aeff129",
+        "name": "Ray 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b485cb76ff99d80c",
+        "type": "debug",
+        "z": "67321a5f3aeff129",
+        "name": "Ray 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c32bada1990088e9",
+        "type": "debug",
+        "z": "67321a5f3aeff129",
+        "name": "Ray 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    }
+]

@@ -1,0 +1,254 @@
+[
+    {
+        "id": "3b731280de1d1041",
+        "type": "tab",
+        "label": "TrafficLight control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "90c88e50dcd5d1b9",
+        "type": "inject",
+        "z": "3b731280de1d1041",
+        "name": "Button",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "659cc047b70ff2f8"
+            ]
+        ]
+    },
+    {
+        "id": "01d4a399181c7557",
+        "type": "Send",
+        "z": "3b731280de1d1041",
+        "name": "",
+        "x": 450,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "659cc047b70ff2f8",
+        "type": "Function",
+        "z": "3b731280de1d1041",
+        "name": "TrafficLights1_2 Red",
+        "robot_name": "TrafficLights1_2",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "1",
+        "L2": "0",
+        "L3": "0",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 280,
+        "y": 80,
+        "wires": [
+            [
+                "01d4a399181c7557"
+            ]
+        ]
+    },
+    {
+        "id": "3a1b1e08afd4dcde",
+        "type": "inject",
+        "z": "3b731280de1d1041",
+        "name": "Button",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "b463528a392cedc1"
+            ]
+        ]
+    },
+    {
+        "id": "7dc4cd3e05a09952",
+        "type": "Send",
+        "z": "3b731280de1d1041",
+        "name": "",
+        "x": 450,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b463528a392cedc1",
+        "type": "Function",
+        "z": "3b731280de1d1041",
+        "name": "TrafficLights1_2 Green",
+        "robot_name": "TrafficLights1_2",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "1",
+        "L3": "0",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "7dc4cd3e05a09952"
+            ]
+        ]
+    },
+    {
+        "id": "3fdf48c976dcba08",
+        "type": "inject",
+        "z": "3b731280de1d1041",
+        "name": "Button",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "0f9290c045e8525a"
+            ]
+        ]
+    },
+    {
+        "id": "45eac78e409d46e7",
+        "type": "Send",
+        "z": "3b731280de1d1041",
+        "name": "",
+        "x": 450,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0f9290c045e8525a",
+        "type": "Function",
+        "z": "3b731280de1d1041",
+        "name": "TrafficLights1_2 Blue",
+        "robot_name": "TrafficLights1_2",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "0",
+        "L3": "1",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "45eac78e409d46e7"
+            ]
+        ]
+    },
+    {
+        "id": "f2a803d552238618",
+        "type": "inject",
+        "z": "3b731280de1d1041",
+        "name": "Button",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "53ce63492bcc97e6"
+            ]
+        ]
+    },
+    {
+        "id": "13e60e351f874f3e",
+        "type": "Send",
+        "z": "3b731280de1d1041",
+        "name": "",
+        "x": 450,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "53ce63492bcc97e6",
+        "type": "Function",
+        "z": "3b731280de1d1041",
+        "name": "TrafficLights1_2 Yellow",
+        "robot_name": "TrafficLights1_2",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "0",
+        "L3": "0",
+        "L4": "1",
+        "P": "0",
+        "Text": "",
+        "x": 280,
+        "y": 200,
+        "wires": [
+            [
+                "13e60e351f874f3e"
+            ]
+        ]
+    }
+]
