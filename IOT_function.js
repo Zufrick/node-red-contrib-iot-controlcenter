@@ -3,43 +3,116 @@ module.exports = function(RED) {
     function IOT_addNode(config) {
         RED.nodes.createNode(this, config);
         var node = this;
-        nodeRed = this;
-        node.name = config.name;
-        node.robot_name = config.robot_name;
-        node.N = config.N;
-        node.X = config.X;
-        node.Y = config.Y;
-        node.T = config.T;
-        node.G = config.G;
-        node.V = config.V;
-        node.D0 = config.D0;
-        node.L1 = config.L1;
-        node.L2 = config.L2;
-        node.L3 = config.L3;
-        node.L4 = config.L4;
-        node.P = config.P;
-        node.Text = config.Text;
+        var robot_name = config.robot_name;
+        var n = config.N;
+        var x = config.X;
+        var y = config.Y;
+        var t = config.T;
+        var g = config.G;
+        var v = config.V;
+        var d0 = config.D0;
+        var l1 = config.L1;
+        var l2 = config.L2;
+        var l3 = config.L3;
+        var l4 = config.L4;
+        var p = config.P;
+        var text = config.Text;
+
+        // console.log(config.N)
    
         this.on('input', function(msg) {
-            msg.payload = {
-                "robot_name": node.robot_name,
-                "N": node.N,
-                "X": node.X,
-                "Y": node.Y,
-                "T": node.T,
-                "G": node.G,
-                "V": node.V,
-                "D0": node.D0,
-                "L1": node.L1,
-                "L2": node.L2,
-                "L3": node.L3,
-                "L4": node.L4,
-                "P": node.P,
-                "Text": node.Text,
+
+            if (msg.hasOwnProperty("topicRobot_name")) {
+                var topic = msg.topicRobot_name;
+                robot_name = topic;
             }
+
+            if (msg.hasOwnProperty("topicN")) {
+                var topic = msg.topicN;
+                n = topic;
+            }
+
+            if (msg.hasOwnProperty("topicX")) {
+                var topic = msg.topicX;
+                x = topic;
+            }
+
+            if (msg.hasOwnProperty("topicY")) {
+                var topic = msg.topicY;
+                y = topic;
+            }
+
+            if (msg.hasOwnProperty("topicT")) {
+                var topic = msg.topicT;
+                t = topic;
+            }
+
+            if (msg.hasOwnProperty("topicG")) {
+                var topic = msg.topicG;
+                g = topic;
+            }
+
+            if (msg.hasOwnProperty("topicV")) {
+                var topic = msg.topicV;
+                v = topic;
+            }
+
+            if (msg.hasOwnProperty("topicD0")) {
+                var topic = msg.topicD0;
+                d0 = topic;
+            }
+
+            if (msg.hasOwnProperty("topicL1")) {
+                var topic = msg.topicL1;
+                l1 = topic;
+            }
+
+            if (msg.hasOwnProperty("topicL2")) {
+                var topic = msg.topicL2;
+                l2 = topic;
+            }
+
+            if (msg.hasOwnProperty("topicL3")) {
+                var topic = msg.topicL3;
+                l3 = topic;
+            }
+
+            if (msg.hasOwnProperty("topicL4")) {
+                var topic = msg.topicL4;
+                l4 = topic;
+            }
+
+            if (msg.hasOwnProperty("topicP")) {
+                var topic = msg.topicP;
+                p = topic;
+            }
+
+            if (msg.hasOwnProperty("topicText")) {
+                var topic = msg.topicText;
+                text = topic;
+            }
+
+            msg.payload = {
+                "robot_name": robot_name,
+                "N": n,
+                "X": x,
+                "Y": y,
+                "T": t,
+                "G": g,
+                "V": v,
+                "D0": d0,
+                "L1": l1,
+                "L2": l2,
+                "L3": l3,
+                "L4": l4,
+                "P": p,
+                "Text": text,
+            }
+            // console.log(msg.payload)
             node.send(msg)
+            return msg;
         });
     }
 
-    RED.nodes.registerType("Function", IOT_addNode);
+    RED.nodes.registerType("IOT Function", IOT_addNode);
 };

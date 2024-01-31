@@ -25,27 +25,28 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 60,
+        "y": 80,
         "wires": [
             [
-                "b3b11182e86ab2ce"
+                "88d081378cfd14c9"
             ]
         ]
     },
     {
-        "id": "088476558f87bcd8",
-        "type": "Send",
+        "id": "85026e66f790be0a",
+        "type": "comment",
         "z": "fc4c6ec001cdca77",
-        "name": "",
-        "x": 430,
-        "y": 60,
+        "name": "increment the value of \"N\" to set the next position",
+        "info": "",
+        "x": 240,
+        "y": 160,
         "wires": []
     },
     {
-        "id": "b3b11182e86ab2ce",
-        "type": "Function",
+        "id": "88d081378cfd14c9",
+        "type": "IOT Function",
         "z": "fc4c6ec001cdca77",
-        "name": "Conveyor reset",
+        "name": "Conveyor reset position",
         "robot_name": "Conveyor1",
         "N": "0",
         "X": "0",
@@ -60,16 +61,25 @@
         "L4": "0",
         "P": "1",
         "Text": "",
-        "x": 280,
-        "y": 60,
+        "x": 310,
+        "y": 80,
         "wires": [
             [
-                "088476558f87bcd8"
+                "2fb357f55add217e"
             ]
         ]
     },
     {
-        "id": "67928c48fc36326f",
+        "id": "2fb357f55add217e",
+        "type": "IOT Send",
+        "z": "fc4c6ec001cdca77",
+        "name": "",
+        "x": 500,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "13bcceea510b454c",
         "type": "inject",
         "z": "fc4c6ec001cdca77",
         "name": "Button",
@@ -89,22 +99,13 @@
         "y": 200,
         "wires": [
             [
-                "f9d90d69509e157d"
+                "90309f0ba35efacc"
             ]
         ]
     },
     {
-        "id": "436807057bfabb1d",
-        "type": "Send",
-        "z": "fc4c6ec001cdca77",
-        "name": "",
-        "x": 470,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "f9d90d69509e157d",
-        "type": "Function",
+        "id": "90309f0ba35efacc",
+        "type": "IOT Function",
         "z": "fc4c6ec001cdca77",
         "name": "Conveyor set pose 1",
         "robot_name": "Conveyor1",
@@ -125,22 +126,21 @@
         "y": 200,
         "wires": [
             [
-                "436807057bfabb1d"
+                "75facd37360e2389"
             ]
         ]
     },
     {
-        "id": "85026e66f790be0a",
-        "type": "comment",
+        "id": "75facd37360e2389",
+        "type": "IOT Send",
         "z": "fc4c6ec001cdca77",
-        "name": "increment the value of \"N\" to set the next position",
-        "info": "",
-        "x": 240,
-        "y": 160,
+        "name": "",
+        "x": 500,
+        "y": 200,
         "wires": []
     },
     {
-        "id": "e5e664be5a25772f",
+        "id": "2f3b3a8f9d5897e7",
         "type": "inject",
         "z": "fc4c6ec001cdca77",
         "name": "Button",
@@ -160,22 +160,13 @@
         "y": 240,
         "wires": [
             [
-                "c5e7f92588122d81"
+                "0833db7312e8c06f"
             ]
         ]
     },
     {
-        "id": "5d942b96789e45eb",
-        "type": "Send",
-        "z": "fc4c6ec001cdca77",
-        "name": "",
-        "x": 470,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "c5e7f92588122d81",
-        "type": "Function",
+        "id": "0833db7312e8c06f",
+        "type": "IOT Function",
         "z": "fc4c6ec001cdca77",
         "name": "Conveyor set pose 5",
         "robot_name": "Conveyor1",
@@ -196,8 +187,17 @@
         "y": 240,
         "wires": [
             [
-                "5d942b96789e45eb"
+                "ed9a50c3c993dcd0"
             ]
         ]
+    },
+    {
+        "id": "ed9a50c3c993dcd0",
+        "type": "IOT Send",
+        "z": "fc4c6ec001cdca77",
+        "name": "",
+        "x": 500,
+        "y": 240,
+        "wires": []
     }
 ]

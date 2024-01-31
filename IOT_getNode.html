@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('Get',{
+    RED.nodes.registerType('IOT Get',{
         category: 'IOT Control_center',
         color: '#78A3FF',
         defaults: {
@@ -10,12 +10,12 @@
         outputs:1,
         icon: "bridge.svg",
         label: function() {
-            return this.name||"Get";
+            return this.name||"IOT Get";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="Get">
+<script type="text/html" data-template-name="IOT Get">
     <div class="form-row">
         <label for="node-output-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -27,6 +27,6 @@
     </div> -->
 </script>
 
-<script type="text/html" data-help-name="Get">
+<script type="text/html" data-help-name="IOT Get">
     <p>Gets the value from each device on the polygon</p>
 </script>

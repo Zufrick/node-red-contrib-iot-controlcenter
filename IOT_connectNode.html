@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('Send',{
+    RED.nodes.registerType('IOT Send',{
         category: 'IOT Control_center',
         color: '#78A3FF',
         defaults: {
@@ -10,12 +10,12 @@
         outputs:0,
         icon: "bridge.svg",
         label: function() {
-            return this.name||"Send";
+            return this.name||"IOT Send";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="Send">
+<script type="text/html" data-template-name="IOT Send">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -27,6 +27,6 @@
     </div> -->
 </script>
 
-<script type="text/html" data-help-name="Send">
+<script type="text/html" data-help-name="IOT Send">
     <p>Node to send data to the polygon (before that, use the "Function" node)</p>
 </script>

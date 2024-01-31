@@ -72,5 +72,5 @@ module.exports = function(RED) {
         //   });
     }
 
-    RED.nodes.registerType("Request", IOT_addNode);
+    RED.nodes.registerType("IOT IOT Request", IOT_addNode);
 };

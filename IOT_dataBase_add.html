@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('Request',{
+    RED.nodes.registerType('IOT Request',{
         category: 'IOT Control_center',
         color: '#30ba8f',
         defaults: {
@@ -12,12 +12,12 @@
         outputs:1,  
         icon: "cog.svg",
         label: function() {
-            return this.name||"Request";
+            return this.name||"IOT Request";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="Request">
+<script type="text/html" data-template-name="IOT Request">
     <div class="form-row">
         <label for="node-output-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -50,6 +50,6 @@
 
 </script>
 
-<script type="text/html" data-help-name="Request">
+<script type="text/html" data-help-name="IOT Request">
     <p>Node for MySQL queries</p>
 </script>

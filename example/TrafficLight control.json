@@ -28,43 +28,7 @@
         "y": 80,
         "wires": [
             [
-                "659cc047b70ff2f8"
-            ]
-        ]
-    },
-    {
-        "id": "01d4a399181c7557",
-        "type": "Send",
-        "z": "3b731280de1d1041",
-        "name": "",
-        "x": 450,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "659cc047b70ff2f8",
-        "type": "Function",
-        "z": "3b731280de1d1041",
-        "name": "TrafficLights1_2 Red",
-        "robot_name": "TrafficLights1_2",
-        "N": "0",
-        "X": "0",
-        "Y": "0",
-        "T": "0",
-        "G": "0",
-        "V": "0",
-        "D0": "0",
-        "L1": "1",
-        "L2": "0",
-        "L3": "0",
-        "L4": "0",
-        "P": "0",
-        "Text": "",
-        "x": 280,
-        "y": 80,
-        "wires": [
-            [
-                "01d4a399181c7557"
+                "0a4103f357974aa9"
             ]
         ]
     },
@@ -89,43 +53,7 @@
         "y": 120,
         "wires": [
             [
-                "b463528a392cedc1"
-            ]
-        ]
-    },
-    {
-        "id": "7dc4cd3e05a09952",
-        "type": "Send",
-        "z": "3b731280de1d1041",
-        "name": "",
-        "x": 450,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "b463528a392cedc1",
-        "type": "Function",
-        "z": "3b731280de1d1041",
-        "name": "TrafficLights1_2 Green",
-        "robot_name": "TrafficLights1_2",
-        "N": "0",
-        "X": "0",
-        "Y": "0",
-        "T": "0",
-        "G": "0",
-        "V": "0",
-        "D0": "0",
-        "L1": "0",
-        "L2": "1",
-        "L3": "0",
-        "L4": "0",
-        "P": "0",
-        "Text": "",
-        "x": 280,
-        "y": 120,
-        "wires": [
-            [
-                "7dc4cd3e05a09952"
+                "8d3c2e2e33505ccc"
             ]
         ]
     },
@@ -150,43 +78,7 @@
         "y": 160,
         "wires": [
             [
-                "0f9290c045e8525a"
-            ]
-        ]
-    },
-    {
-        "id": "45eac78e409d46e7",
-        "type": "Send",
-        "z": "3b731280de1d1041",
-        "name": "",
-        "x": 450,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "0f9290c045e8525a",
-        "type": "Function",
-        "z": "3b731280de1d1041",
-        "name": "TrafficLights1_2 Blue",
-        "robot_name": "TrafficLights1_2",
-        "N": "0",
-        "X": "0",
-        "Y": "0",
-        "T": "0",
-        "G": "0",
-        "V": "0",
-        "D0": "0",
-        "L1": "0",
-        "L2": "0",
-        "L3": "1",
-        "L4": "0",
-        "P": "0",
-        "Text": "",
-        "x": 280,
-        "y": 160,
-        "wires": [
-            [
-                "45eac78e409d46e7"
+                "700d435c782d806f"
             ]
         ]
     },
@@ -211,25 +103,124 @@
         "y": 200,
         "wires": [
             [
-                "53ce63492bcc97e6"
+                "445a83e1964b4ff8"
             ]
         ]
     },
     {
-        "id": "13e60e351f874f3e",
-        "type": "Send",
+        "id": "0a4103f357974aa9",
+        "type": "IOT Function",
+        "z": "3b731280de1d1041",
+        "name": "TrafficLights1_1 Red on",
+        "robot_name": "TrafficLights1_1",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "1",
+        "L2": "0",
+        "L3": "0",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "fc71eabeaf517aea"
+            ]
+        ]
+    },
+    {
+        "id": "fc71eabeaf517aea",
+        "type": "IOT Send",
         "z": "3b731280de1d1041",
         "name": "",
-        "x": 450,
-        "y": 200,
+        "x": 480,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "53ce63492bcc97e6",
-        "type": "Function",
+        "id": "8d3c2e2e33505ccc",
+        "type": "IOT Function",
         "z": "3b731280de1d1041",
-        "name": "TrafficLights1_2 Yellow",
-        "robot_name": "TrafficLights1_2",
+        "name": "TrafficLights1_1 Yellow on",
+        "robot_name": "TrafficLights1_1",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "1",
+        "L3": "0",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "9f38653d84312614"
+            ]
+        ]
+    },
+    {
+        "id": "9f38653d84312614",
+        "type": "IOT Send",
+        "z": "3b731280de1d1041",
+        "name": "",
+        "x": 480,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "700d435c782d806f",
+        "type": "IOT Function",
+        "z": "3b731280de1d1041",
+        "name": "TrafficLights1_1 Green on",
+        "robot_name": "TrafficLights1_1",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "0",
+        "L3": "1",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 290,
+        "y": 160,
+        "wires": [
+            [
+                "9ce86838ec056d25"
+            ]
+        ]
+    },
+    {
+        "id": "9ce86838ec056d25",
+        "type": "IOT Send",
+        "z": "3b731280de1d1041",
+        "name": "",
+        "x": 480,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "445a83e1964b4ff8",
+        "type": "IOT Function",
+        "z": "3b731280de1d1041",
+        "name": "TrafficLights1_1 Blue on",
+        "robot_name": "TrafficLights1_1",
         "N": "0",
         "X": "0",
         "Y": "0",
@@ -243,12 +234,82 @@
         "L4": "1",
         "P": "0",
         "Text": "",
-        "x": 280,
+        "x": 290,
         "y": 200,
         "wires": [
             [
-                "13e60e351f874f3e"
+                "e16131fd6ad4b244"
             ]
         ]
+    },
+    {
+        "id": "e16131fd6ad4b244",
+        "type": "IOT Send",
+        "z": "3b731280de1d1041",
+        "name": "",
+        "x": 480,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cefec99133df029a",
+        "type": "inject",
+        "z": "3b731280de1d1041",
+        "name": "Button",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "7ad5491e79e7519f"
+            ]
+        ]
+    },
+    {
+        "id": "7ad5491e79e7519f",
+        "type": "IOT Function",
+        "z": "3b731280de1d1041",
+        "name": "TrafficLights1_1 LED off",
+        "robot_name": "TrafficLights1_1",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "0",
+        "L3": "0",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "99ddc0b0d8ee1648"
+            ]
+        ]
+    },
+    {
+        "id": "99ddc0b0d8ee1648",
+        "type": "IOT Send",
+        "z": "3b731280de1d1041",
+        "name": "",
+        "x": 480,
+        "y": 260,
+        "wires": []
     }
 ]

@@ -1,7 +1,7 @@
 <script type="text/javascript">
-    RED.nodes.registerType('Function',{
+    RED.nodes.registerType('IOT Function',{
         category: 'IOT Control_center',
-        color: '#FFB066',
+        color: '#D8A2C7',
         defaults: {
             name: {value:""},
             robot_name: {value:"", required:true},
@@ -23,19 +23,19 @@
         outputs:1,  
         icon: "function.svg",
         label: function() {
-            return this.name||"Function";
+            return this.name||"IOT Function";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="Function">
+<script type="text/html" data-template-name="IOT Function">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 
     <div class="form-row">
-        <label for="node-output-robot_name"><i class="fa fa-tag"></i> robot_name</label>
+        <label for="node-output-robot_name"><i class="fa fa-sliders"></i> Robot_name</label>
         <input type="text" id="node-input-robot_name" placeholder="Robot1_1">
     </div>
 
@@ -106,6 +106,6 @@
 
 </script>
 
-<script type="text/html" data-help-name="Function">
+<script type="text/html" data-help-name="IOT Function">
     <p>Setting up parameters for a device with a robot name</p>
 </script>
