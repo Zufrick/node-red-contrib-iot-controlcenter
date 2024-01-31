@@ -5,8 +5,7 @@
 ## Example
 + Robot control\
 ![](./pictures/Robotcontrol.png "Title")\
-get value from platform
-![](./pictures/GetvalueforRobot.png "Title")\
+![](./pictures/GetvalueforRobot.png "Title")
 ---
 + TrafficLight control\
 ![](./pictures/TrafficLightcontrol.png "Title")
