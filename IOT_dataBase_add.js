@@ -51,6 +51,18 @@ module.exports = function(RED) {
                     msg.topic = node.method + " into " + node.tablename + " " + nameReq + " values " + valueReq + ";";
                     break;
                 
+                case 'UPDATE': 
+                    const parsedData = JSON.parse(node.properties);
+                    msg.topic = node.method + " " + node.tablename + " SET";
+                    for(let key in parsedData){ 
+                        var val = parsedData[key];
+                        msg.topic += " " + key + " = " + val + ","; 
+                    } 
+                    msg.topic = msg.topic.slice(0, -1);
+                    msg.topic += ";";
+                    node.send(msg);
+                    break;
+                
                 case 'DELETE':
                     msg.topic = node.method + " from " + node.tablename + " where " + node.properties + ";";
                     break;
